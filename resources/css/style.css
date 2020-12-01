@@ -91,6 +91,50 @@ header{
 }
 
 .hero-text-box p{
-    margin-bottom: 10px;
+    color: #a5a5a5;
+    margin-bottom: 20px;
 }
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 20px;
+    padding: 3px 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 80%;
+}
+
+.main-nav li a ion-icon{
+    vertical-align: middle;
+    color: #F04772;
+}
+
+.main-nav li a span{
+    transition: border-bottom 0.2s;
+    padding: 8px 0;
+}
+
+.main-nav li a span:hover,
+.main-nav li a span:active{
+    border-bottom: 2px solid #F04772;
+    color: #F04772;
+}
+
 

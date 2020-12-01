@@ -1,0 +1,96 @@
+/* ---------------------------------------------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------------------------------------------- */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: #3d3d3d;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ---------------------------------------------------------------------------- */
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* ------------HEADINGS------------ */
+
+h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 240%;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+/* ------------BUTTONS------------ */
+
+.btn:link,.btn:visited{
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #F04772;
+    transition: background-color 0.3s,border 0.3s, color 0.3s;
+    margin-right: 15px;
+}
+
+.btn-full:link,.btn-full:visited{
+    background-color: #F04772;
+    color: #fff;
+}
+
+.btn-ghost:link,.btn-ghost:visited{
+    background-color: transparent;
+    color: #F04772;
+}
+
+.btn:hover,.btn:active{
+    background-color: #ed285a;
+    border: 1px solid #ed285a;
+    color: #fff;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* HEADER */
+/* ---------------------------------------------------------------------------- */
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../assets/bg-education.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+}
+
+.hero-text-box{
+    position: absolute;
+    text-align: justify;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+
+.hero-text-box p{
+    margin-bottom: 10px;
+}
+

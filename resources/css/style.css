@@ -253,12 +253,14 @@ header{
 .section-causes .row div{
     background-color: #e4e4e4;
     margin-top: 10px;
+    border-radius: 10px;
 }
 
 .causes-img{
     width: 100%;
     margin: 0 auto;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .section-causes .row a{

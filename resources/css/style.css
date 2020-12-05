@@ -74,6 +74,10 @@ h3{
     text-align: center;
 }
 
+h4{
+    margin-left: 10%;
+}
+
 /* ------------PARAGRAPH------------ */
 
 .long-text{
@@ -268,3 +272,81 @@ header{
     margin-left: 27.5%;
     margin-bottom: 20px;
 }
+
+/* ---------------------------------------------------------------------------- */
+/* DONATE */
+/* ---------------------------------------------------------------------------- */
+
+.section-donate{
+    background-color: #e6e6e6;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------------------------------------------- */
+
+footer{
+    margin-top: 30px;
+    background-color: #333333;
+    color: #888888;
+    text-align: center;
+}
+.footer-nav{
+    float: left;
+}
+.footer-nav li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 12px;
+    padding-top: 20px;
+    font-size: 90%;
+}
+
+.footer-nav li:last-child{
+    padding-right: 0px;
+}
+
+.footer-nav li a{
+    text-decoration: none;
+    color: #888888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover{
+    color: #00ACED;
+}
+
+.social-links{
+    float: right;
+}
+
+.social-links li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 18px;
+    padding-top: 20px;
+    font-size: 90%;
+}
+
+.social-links li:last-child{
+    padding-right: 0px;
+}
+
+.social-links li a{
+    text-decoration: none;
+    color: #888888;
+}
+
+.social-links li a:hover{
+    color: #00ACED;
+}
+
+
+footer div p{
+    font-size: 85%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+

@@ -6,11 +6,12 @@
         <link rel="stylesheet" type="text/css" href="./vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="./vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="./resources/css/carousel.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="skill-training">
+        <header class="">
             <nav>
                 <div class="row">
                     <img src="./resources/assets/logo.png" alt="pankh_logo" class="logo">
@@ -44,37 +45,45 @@
                 <a href="#" class="btn btn-full">Volunteer with us</a>
             </div> -->
         </header>
-
-
-
-
-        
-        <footer>
+        <div class="container">
             <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Donate</a></li>
-                        <li><a href="#">Volunteer</a></li>
-                        <li><a href="#">Shop</a></li>
-                    </ul>
-                </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    </ul>
-                </div>
+                <h2 class="title-donation">Online Donation Form</h2>
             </div>
+            
             <div class="row">
-                <p>
-                    Copyright &copy; 2020 by Pankh. All rights reserved.
-                </p>
+                <form action="/action_page.php">
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="fname">Full Name</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="text" id="fname" name="fullname" placeholder="Your name..">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="lname">Email</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="Your email..">
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="subject">Comment</label>
+                      </div>
+                      <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <input type="submit" value="Donate">
+                    </div>
+                </form> 
             </div>
-        </footer>
+        </div>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="./resources/js/script.js"></script>

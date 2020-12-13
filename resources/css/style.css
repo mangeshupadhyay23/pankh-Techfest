@@ -213,12 +213,12 @@ header{
 .active{
     padding: 8px 0;
     border-bottom: 2px solid #F04772;
-    color: #F04772;
 }
 
 .dropdown-content a{
     display: block;
     padding: 10px;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
     transition: border-bottom 0.2s;
 }
 
@@ -243,7 +243,6 @@ header{
 .dropdown-content a:hover{
     border-bottom: 2px solid #F04772;
 }
-
 
 /* ---------------------------------------------------------------------------- */
 /* WELCOME SECTION */

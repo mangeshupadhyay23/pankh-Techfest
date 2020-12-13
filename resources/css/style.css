@@ -208,16 +208,17 @@ header {
 
 .main-nav li a span:hover,
 .main-nav li a span:active,
-.active {
-	padding: 8px 0;
-	border-bottom: 2px solid #f04772;
-	color: #f04772;
+
+.active{
+    padding: 8px 0;
+    border-bottom: 2px solid #F04772;
 }
 
-.dropdown-content a {
-	display: block;
-	padding: 10px;
-	transition: border-bottom 0.2s;
+.dropdown-content a{
+    display: block;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+    transition: border-bottom 0.2s;
 }
 
 .dropdown-content {

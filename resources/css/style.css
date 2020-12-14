@@ -146,20 +146,20 @@ h3 {
 /* ---------------------------------------------------------------------------- */
 
 header {
-    background:black;
+	background: black;
 	background-position: center;
 	background-size: cover;
 	height: 95vh;
 	width: 99vw;
 }
 
-.home{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../assets/bg-education.jpg');
-    height: 95vh;
+.home {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/bg-education.jpg');
+	height: 95vh;
 }
-.skill-training{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../assets/skill-training-bg.jpg');
-    height: 95vh;
+.skill-training {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/skill-training-bg.jpg');
+	height: 95vh;
 }
 
 .hero-text-box {
@@ -218,17 +218,16 @@ header {
 
 .main-nav li a span:hover,
 .main-nav li a span:active,
-
-.active{
-    padding: 8px 0;
-    border-bottom: 2px solid #F04772;
+.active {
+	padding: 8px 0;
+	border-bottom: 2px solid #f04772;
 }
 
-.dropdown-content a{
-    display: block;
-    padding: 10px;
-    border-bottom: 2px solid rgba(0,0,0,0.5);
-    transition: border-bottom 0.2s;
+.dropdown-content a {
+	display: block;
+	padding: 10px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+	transition: border-bottom 0.2s;
 }
 
 .dropdown-content {
@@ -298,58 +297,58 @@ header {
 /* ---------------------------------------------------------------------------- */
 /* FOOTER */
 /* ---------------------------------------------------------------------------- */
-footer{
-    margin-top: 30px;
-    background-color: #333333;
-    color: #888888;
-    text-align: center;
+footer {
+	margin-top: 30px;
+	background-color: #333333;
+	color: #888888;
+	text-align: center;
 }
-.footer-nav{
-    float: left;
+.footer-nav {
+	float: left;
 }
-.footer-nav li{
-    display: inline-block;
-    list-style: none;
-    padding-right: 12px;
-    padding-top: 20px;
-    font-size: 90%;
+.footer-nav li {
+	display: inline-block;
+	list-style: none;
+	padding-right: 12px;
+	padding-top: 20px;
+	font-size: 90%;
 }
-.footer-nav li:last-child{
-    padding-right: 0px;
+.footer-nav li:last-child {
+	padding-right: 0px;
 }
-.footer-nav li a{
-    text-decoration: none;
-    color: #888888;
-    transition: color 0.2s;
+.footer-nav li a {
+	text-decoration: none;
+	color: #888888;
+	transition: color 0.2s;
 }
-.footer-nav li a:hover{
-    color: #00ACED;
+.footer-nav li a:hover {
+	color: #00aced;
 }
-.social-links{
-    float: right;
+.social-links {
+	float: right;
 }
-.social-links li{
-    display: inline-block;
-    list-style: none;
-    padding-right: 18px;
-    padding-top: 20px;
-    font-size: 90%;
+.social-links li {
+	display: inline-block;
+	list-style: none;
+	padding-right: 18px;
+	padding-top: 20px;
+	font-size: 90%;
 }
-.social-links li:last-child{
-    padding-right: 0px;
+.social-links li:last-child {
+	padding-right: 0px;
 }
-.social-links li a{
-    text-decoration: none;
-    color: #888888;
+.social-links li a {
+	text-decoration: none;
+	color: #888888;
 }
-.social-links li a:hover{
-    color: #00ACED;
+.social-links li a:hover {
+	color: #00aced;
 }
-footer div p{
-    font-size: 85%;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 15px;
+footer div p {
+	font-size: 85%;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 15px;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -365,9 +364,9 @@ footer div p{
 /* ---------------------------------------------------------------------------- */
 /* WORKING SECTION */
 /* ---------------------------------------------------------------------------- */
-.section-skill-working .working-img img{
-    width: 100%;
-    margin-bottom: 30px;
+.section-skill-working .working-img img {
+	width: 100%;
+	margin-bottom: 30px;
 }
 
 /* Form styles - START */
@@ -396,6 +395,7 @@ input[type=submit] {
 	border-radius: 4px;
 	cursor: pointer;
 	float: right;
+	margin-left: 2px;
 }
 
 input[type=submit]:hover {
@@ -415,26 +415,40 @@ input[type=submit]:hover {
 	margin-top: 6px;
 }
 
+.col-35 {
+	float: left;
+	width: 35%;
+	margin-top: 6px;
+}
+
+.col-40 {
+	float: left;
+	width: 40%;
+	margin-top: 6px;
+}
+
 .col-75 {
 	float: left;
 	width: 75%;
 	margin-top: 6px;
 }
 
-/* Clear floats after the columns */
 .row:after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 	.col-25,
+	.col-40,
 	.col-75,
 	input[type=submit] {
 		width: 100%;
 		margin-top: 0;
+	}
+	.col-35 {
+		width: 100%;
 	}
 }
 

@@ -1,0 +1,65 @@
+/* FOR MORE THAN 1200px */
+@media only screen and (max-width:1200px){
+
+    .row{
+        padding: 0 2%;
+    }
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+/* FOR 768px to 1023px */
+@media only screen and (max-width:1023px){
+
+    body{
+        font-size: 18px;
+    }
+
+    section{
+        padding: 60px 0;
+    }
+
+    .section-causes .row a {
+        width: 50%;
+        padding: 3% 0%;
+    }
+}
+
+/* FOR 481px to 767px */
+@media only screen and (max-width:767px){
+    body{font-size: 16px;}
+
+    section{padding: 30px 0;}
+
+    .row,
+    .hero-text-box{padding: 0 4%;}
+
+    .main-nav{display: none;}
+
+    .col{ 
+        width: 100%;
+        margin: 0 0 4% 0%; 
+    }
+
+    h1{font-size: 180%;}
+    h2{font-size: 150%;}
+
+    .long-text{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* FOR 0 to 480px */
+@media only screen and (max-width:480px){
+    .welcome-img img {
+        width: 70%;
+        float: none;
+        margin-left: 15%;
+        margin-bottom: 10px;
+    }
+
+    section{ padding: 20px 0;}
+}

@@ -14,7 +14,7 @@
     </head>
     <body>
         <header class="home">
-            <nav>
+            <nav id="navbar">
                 <div class="row">
                     <img src="./resources/assets/logo.png" alt="pankh_logo" class="logo">
                     <ul class="main-nav">
@@ -27,6 +27,9 @@
                                 <a href="./quality-education.html">Quality Education</a>
                             </div>
                         </li>
+                        <!-- <li><a href="./skill-training.html">Skill Training</a></li>
+                        <li><a href="./healthcare.html">Healthcare</a></li>
+                        <li><a href="./quality-education.html">Quality Education</a></li> -->
                         <li><a href="./volunteer.html"><span>Volunteer</span></a></li>
                         <li class="dropdown">
                             <a href="#"><span>About</span> <ion-icon name="chevron-down-outline"></ion-icon></a>
@@ -39,6 +42,7 @@
                         <li><a href="./shop.html"><span>Shop</span></a></li>
                         <li><a href="./donate.html" class="btn btn-full">Donate</a></li>
                     </ul>
+                    <a class="mobile-nav-icon"><ion-icon name="reorder-three-outline"></ion-icon></a>
                 </div>
             </nav>
             <div class="hero-text-box">
@@ -48,7 +52,7 @@
             </div>
         </header>
 
-        <section class="section-welcome">
+        <section class="section-welcome" id="welcome">
             <div class="row">
                 <h2>Welcome to Pankh</h2>
                 <div class="welcome-img ">
@@ -186,5 +190,17 @@
         </footer>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script>
+        window.onscroll = function(){
+            var prevScrollpos = document.getElementById("welcome").offsetTop;
+            var currentScrollPos = window.pageYOffset;
+
+            if(currentScrollPos+50>=prevScrollpos && document.getElementById('navbar').classList.length===0){
+                document.getElementById('navbar').classList.add("sticky");
+            }else if(currentScrollPos+50<prevScrollpos && document.getElementById('navbar').classList.length===1){
+                document.getElementById('navbar').classList.remove("sticky");
+            }
+        }
+    </script>
     <script src="./resources/js/script.js"></script>
 </html>

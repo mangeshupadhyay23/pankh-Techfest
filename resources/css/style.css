@@ -238,7 +238,7 @@ header {
 	display: block;
 	position: absolute;
 	transition: all 0.5s;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 1);
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;

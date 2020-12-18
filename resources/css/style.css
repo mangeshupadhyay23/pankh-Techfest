@@ -73,8 +73,10 @@ h2::after {
 
 h3 {
 	font-size: 110%;
-	text-align: center;
+    text-align: center;
+    margin-bottom: 20px;
 }
+
 
 /* ------------PARAGRAPH------------ */
 
@@ -447,8 +449,46 @@ footer div p {
 /* WORKING SECTION */
 /* ---------------------------------------------------------------------------- */
 .section-skill-working .working-img img {
-	width: 100%;
+    width: 50%;
+    margin-left: 25%;
 	margin-bottom: 30px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* GALLERY */
+/* ---------------------------------------------------------------------------- */
+
+.gallery{
+    list-style: none;
+    width: 100%;
+}
+
+.gallery li{
+    display: block;
+    float: left;
+    width: 30%;
+    margin: 1%;
+}
+
+.working-photo{
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.working-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s,opacity 0.5s;
+}
+
+.working-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
 }
 
 /* Form styles - START */

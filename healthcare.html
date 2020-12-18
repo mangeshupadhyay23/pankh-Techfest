@@ -13,16 +13,16 @@
     </head>
     <body>
         <header class="skill-training">
-            <nav>
+            <nav id="navbar">
                 <div class="row">
                     <img src="./resources/assets/logo.png" alt="pankh_logo" class="logo">
                     <ul class="main-nav">
-                        <li><a href="./index.html" ><span>Home</span></a></li>
+                        <li><a href="./index.html"><span>Home</span></a></li>
                         <li class="dropdown">
-                            <a href="#" class="active"><span>Causes</span> <ion-icon name="chevron-down-outline"></ion-icon></a>
+                            <a href="#" ><span>Causes</span> <ion-icon name="chevron-down-outline"></ion-icon></a>
                             <div class="dropdown-content">
-                                <a href="./skill-training.html" >Skill Training</a>
-                                <a href="#" class="active" style="padding-left: 8px;">Healthcare</a>
+                                <a href="./skill-training.html">Skill Training</a>
+                                <a href="#" class="active">Healthcare</a>
                                 <a href="./quality-education.html">Quality Education</a>
                             </div>
                         </li>
@@ -38,14 +38,76 @@
                         <li><a href="./shop.html"><span>Shop</span></a></li>
                         <li><a href="./donate.html" class="btn btn-full">Donate</a></li>
                     </ul>
+                    <a class="mobile-nav-icon"><ion-icon name="reorder-three-outline"></ion-icon></a>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Teaching skills to unskilled</h1>
-                <p>Join with us to make a change</p>
-                <a href="#" class="btn btn-full">Volunteer with us</a>
+                <p>At PANKH we provide free vocational courses and skill training to unemployed youth<br/> and women
+                    who come from marginalised communities.</p>
+                <a href="#" class="btn btn-full">Join us</a>
             </div>
         </header>
+
+        <section id="causes" class="section-skill-intro">
+            <div class="row">
+                <h2>Teaching skills to unskilled</h2>
+                <div  class="welcome-img">
+                    <img src="./resources/assets/dawd.jpg">
+                </div>
+                <p class="long-text">
+                    At PANKH we provide free vocational courses and skill training to unemployed youth and women
+                    who come from marginalised communities. 
+                </p>
+            </div>
+        </section>
+
+
+        <section class="section-skill-working">
+            <h2>Healthcare</h2>
+            
+            <div class="row"> 
+                <div class="row">
+                    <ul class="gallery">
+                        <li>
+                            <figure class="working-photo">
+                                <img src="./resources/assets/healthcare1.jpg" alt="working 1">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="working-photo">
+                                <img src="./resources/assets/healthcare2.jpg" alt="working 2">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="working-photo">
+                                <img src="./resources/assets/healthcare3.jpg" alt="working 3">
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+                <p class="long-text">
+                    PANKH strives to provide low-cost primary healthcare services to underprivileged communities by setting up a chain of primary healthcare clinics which provide medical consultation and medicines at very low subsidised prices. 
+                    <br/>
+                    <br/>
+                    We also provide subsidized eye and dental check ups along with Cataract surgeries, Root canals and cavity fillings in collaboration with Dr. Menson’s Eye and Dental Hospitals. 
+                    <br/>
+                    <br/>
+                    Covid 19 Project - 
+                    <br/>
+                    <br/>
+                    PANKH is currently engaged in provision of masks, soaps and ration kits to underprivileged families. 
+                    <br/>
+                    <br/>
+                    Our efforts are also focused on creating awareness regarding hygiene, sanitation and natural methods of increasing one’s immunity via Heart-leaved moonseed (Giloy), Neem and other similar ayurvedic herbs that are easily available.
+                    <br/>
+                    <br/>
+                    All health care centres are sanitized multiple times and follow all precautions related to Covid 19.
+                    <br/>
+                    <a href="#" class="btn btn-ghost" >Join us <ion-icon name="caret-forward-outline"></ion-icon></a>
+                </p>
+            </div>
+        </section>
 
        
 
@@ -78,4 +140,16 @@
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="./resources/js/script.js"></script>
+    <script>
+        window.onscroll = function(){
+            var prevScrollpos = document.getElementById("causes").offsetTop;
+            var currentScrollPos = window.pageYOffset;
+
+            if(currentScrollPos+50>=prevScrollpos && document.getElementById('navbar').classList.length===0){
+                document.getElementById('navbar').classList.add("sticky");
+            }else if(currentScrollPos+50<prevScrollpos && document.getElementById('navbar').classList.length===1){
+                document.getElementById('navbar').classList.remove("sticky");
+            }
+        }
+    </script>
 </html>

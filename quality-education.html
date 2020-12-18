@@ -13,20 +13,20 @@
     </head>
     <body>
         <header class="skill-training">
-            <nav>
+            <nav id="navbar">
                 <div class="row">
                     <img src="./resources/assets/logo.png" alt="pankh_logo" class="logo">
                     <ul class="main-nav">
-                        <li><a href="./index.html" ><span>Home</span></a></li>
+                        <li><a href="./index.html"><span>Home</span></a></li>
                         <li class="dropdown">
                             <a href="#" class="active"><span>Causes</span> <ion-icon name="chevron-down-outline"></ion-icon></a>
                             <div class="dropdown-content">
                                 <a href="./skill-training.html">Skill Training</a>
                                 <a href="./healthcare.html">Healthcare</a>
-                                <a href="#" class="active" style="padding-left: 8px;">Quality Education</a>
+                                <a href="#" class="active">Quality Education</a>
                             </div>
                         </li>
-                        <li><a href="#"><span>Volunteer</span></a></li>
+                        <li><a href="./volunteer.html"><span>Volunteer</span></a></li>
                         <li class="dropdown">
                             <a href="#"><span>About</span> <ion-icon name="chevron-down-outline"></ion-icon></a>
                             <div class="dropdown-content">
@@ -35,19 +35,81 @@
                                 <a href="./milestones.html">Milestones</a>
                             </div>
                         </li>
-                        <li><a href="#"><span>Shop</span></a></li>
-                        <li><a href="#" class="btn btn-full">Donate</a></li>
+                        <li><a href="./shop.html"><span>Shop</span></a></li>
+                        <li><a href="./donate.html" class="btn btn-full">Donate</a></li>
                     </ul>
+                    <a class="mobile-nav-icon"><ion-icon name="reorder-three-outline"></ion-icon></a>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Teaching skills to unskilled</h1>
-                <p>Join with us to make a change</p>
-                <a href="#" class="btn btn-full">Volunteer with us</a>
+                <p>At PANKH we provide free vocational courses and skill training to unemployed youth<br/> and women
+                    who come from marginalised communities.</p>
+                <a href="#" class="btn btn-full">Join us</a>
             </div>
         </header>
 
+        <section id="causes" class="section-skill-intro">
+            <div class="row">
+                <h2>Teaching skills to unskilled</h2>
+                <div  class="welcome-img">
+                    <img src="./resources/assets/dawd.jpg">
+                </div>
+                <p class="long-text">
+                    At PANKH we provide free vocational courses and skill training to unemployed youth and women
+                    who come from marginalised communities. 
+                </p>
+            </div>
+        </section>
 
+        <section class="section-skill-working">
+            <h2>quality-education</h2>
+            
+            <div class="row"> 
+                <div class="row">
+                    <ul class="gallery">
+                        <li>
+                            <figure class="working-photo">
+                                <img src="./resources/assets/quality-education1.jpg" alt="working 1">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="working-photo">
+                                <img src="./resources/assets/quality-education2.jpg" alt="working 2">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="working-photo">
+                                <img src="./resources/assets/quality-education3.jpg" alt="working 3">
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+                <p class="long-text">
+                    PANKH has been providing free education facilities in various domains like in English, life skills, arithmetic, languages and computer education. 
+                    <br/>
+                    <br/>
+                    COVID - 19 Project required us to shift from classroom teaching to online platforms. 
+                    <br/>
+                    <br/>
+                    Every student enrolled with us has access to different facilities and thus we have adopted 3 methods to provide quality online education to them in times of a pandemic - 
+                    <br/>
+                    <br/>
+                    1. Our research shows that 15% students enrolled with us have access to smartphones as well as internet connectivity thus they are taught via animated digital content shared via whatsapp. 
+                    <br/>
+                    <br/>
+                    2. 60% students live nearby skill training centres set up by PANKH and thus are taught via projectors assembled at these centres keeping all precautions by sanitising the entire area multiple times and taking classes in multiple shifts to maintain social distancing.
+                    <br/>
+                    <br/>
+                    3. 35% students do not fall in any of these groups and thus are provided with smartphones and tablets with pre installed education applications. 
+                    <br/>
+                    <br/>
+                    We not only provide education to students but also adults regarding sanitation and hygiene, basic mathematics and reading-writing knowledge, awareness about their basic rights, how to avail facilities provided by banks and government schemes etc. via similar online platforms. 
+                    <br/>
+                    <a href="#" class="btn btn-ghost" >Join us <ion-icon name="caret-forward-outline"></ion-icon></a>
+                </p>
+            </div>
+        </section>
 
 
         
@@ -80,4 +142,16 @@
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="./resources/js/script.js"></script>
+    <script>
+        window.onscroll = function(){
+            var prevScrollpos = document.getElementById("causes").offsetTop;
+            var currentScrollPos = window.pageYOffset;
+
+            if(currentScrollPos+50>=prevScrollpos && document.getElementById('navbar').classList.length===0){
+                document.getElementById('navbar').classList.add("sticky");
+            }else if(currentScrollPos+50<prevScrollpos && document.getElementById('navbar').classList.length===1){
+                document.getElementById('navbar').classList.remove("sticky");
+            }
+        }
+    </script>
 </html>

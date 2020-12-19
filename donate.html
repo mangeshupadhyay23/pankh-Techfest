@@ -53,7 +53,7 @@
             </div>
             
             <div class="row">
-                <form action="/action_page.php">
+                <form>
                     <div class="row">
                       <div class="col-25">
                         <label for="fname">Full Name</label>
@@ -90,19 +90,31 @@
                         <input type="text" id="amount" name="amount" placeholder="Please enter a valid amount">
                       </div>
                       <div class="col-35">
-                        <input type="submit" value="₹ 200">
-                        <input type="submit" value="₹ 500">
-                        <input type="submit" value="₹ 1000">
+                        <input type="submit" name="amt" value="200" onclick="fillAmount(this.value)">
+                        <input type="submit" name="amt" value="500" onclick="fillAmount(this.value)">
+                        <input type="submit" name="amt" value="1000" onclick="fillAmount(this.value)">
                       </div>
                     </div>
                     <br>
                     <div class="row">
-                      <input type="submit" value="Donate">
+                      <input type="submit" class="center-button" value="Donate">
                     </div>
                 </form> 
             </div>
+            <br>
+            <div class="row payment-method">
+              <h3>We accept following payment methods</h3>
+              <img src="/resources/assets/payment_method.png" class="centered" alt="">
+            </div>
         </div>
     </body>
+    <script>
+      function fillAmount(num) {
+        var txt=document.getElementById("amt").value;
+        txt=txt + num;
+        document.getElementById("amount").value=txt;
+      }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="./resources/js/script.js"></script>
 </html>

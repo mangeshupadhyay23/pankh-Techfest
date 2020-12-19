@@ -12,14 +12,15 @@
 	outline: none;
 }
 
-html,body {
+html,
+body {
 	background-color: #fff;
 	color: #3d3d3d;
 	font-family: 'Montserrat', 'Arial', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
-    text-rendering: optimizeLegibility;
-    overflow-x: hidden;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -73,10 +74,9 @@ h2::after {
 
 h3 {
 	font-size: 110%;
-    text-align: center;
-    margin-bottom: 20px;
+	text-align: center;
+	margin-bottom: 20px;
 }
-
 
 /* ------------PARAGRAPH------------ */
 
@@ -110,7 +110,7 @@ h3 {
 
 .btn-full:link,
 .btn-full:visited {
-    text-align: center;
+	text-align: center;
 	padding: 10px 20px;
 	border-radius: 10px;
 	border: 1px solid #f04772;
@@ -258,20 +258,20 @@ header {
 
 /* STICKY NAV */
 
-.sticky{
-    position: fixed;
-    top:0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255,255,255,0.98);
-    box-shadow: 0 2px 2px #efefef;
-    z-index: 9999;
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.98);
+	box-shadow: 0 2px 2px #efefef;
+	z-index: 9999;
 }
 
 .sticky .main-nav li a {
 	text-decoration: none;
-    color: #000000;
-    font-weight: 500;
+	color: #000000;
+	font-weight: 500;
 	text-transform: uppercase;
 	font-size: 80%;
 }
@@ -287,10 +287,10 @@ header {
 	margin-top: 20px;
 }
 
-.sticky .logo{
-    height: 50px;
-    margin-top: 15px;
-    margin-bottom: 5px;
+.sticky .logo {
+	height: 50px;
+	margin-top: 15px;
+	margin-bottom: 5px;
 }
 
 .sticky .dropdown-content a {
@@ -322,18 +322,17 @@ header {
 	border-bottom: 2px solid #f04772;
 }
 
-
 /* MOBILE-NAV */
-.mobile-nav-icon{
-    float: right;
-    margin-top: 55px;
-    cursor: pointer;
-    display: none;
+.mobile-nav-icon {
+	float: right;
+	margin-top: 55px;
+	cursor: pointer;
+	display: none;
 }
 
-.mobile-nav-icon ion-icon{
-    font-size: 200%;
-    color: white;
+.mobile-nav-icon ion-icon {
+	font-size: 200%;
+	color: white;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -374,8 +373,8 @@ header {
 /* DONATE */
 /* ---------------------------------------------------------------------------- */
 
-.section-donate{
-    background-color: rgb(230, 230, 230);
+.section-donate {
+	background-color: rgb(230, 230, 230);
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -449,8 +448,8 @@ footer div p {
 /* WORKING SECTION */
 /* ---------------------------------------------------------------------------- */
 .section-skill-working .working-img img {
-    width: 50%;
-    margin-left: 25%;
+	width: 50%;
+	margin-left: 25%;
 	margin-bottom: 30px;
 }
 
@@ -458,37 +457,37 @@ footer div p {
 /* GALLERY */
 /* ---------------------------------------------------------------------------- */
 
-.gallery{
-    list-style: none;
-    width: 100%;
+.gallery {
+	list-style: none;
+	width: 100%;
 }
 
-.gallery li{
-    display: block;
-    float: left;
-    width: 30%;
-    margin: 1%;
+.gallery li {
+	display: block;
+	float: left;
+	width: 30%;
+	margin: 1%;
 }
 
-.working-photo{
-    width: 100%;
-    margin: 0px;
-    overflow: hidden;
-    background-color: black;
-    border-radius: 5px;
+.working-photo {
+	width: 100%;
+	margin: 0px;
+	overflow: hidden;
+	background-color: black;
+	border-radius: 5px;
 }
 
-.working-photo img{
-    opacity: 0.7;
-    width: 100%;
-    height: auto;
-    transform: scale(1.15);
-    transition: transform 0.5s,opacity 0.5s;
+.working-photo img {
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: transform 0.5s, opacity 0.5s;
 }
 
-.working-photo img:hover{
-    transform: scale(1.03);
-    opacity: 1;
+.working-photo img:hover {
+	transform: scale(1.03);
+	opacity: 1;
 }
 
 /* Form styles - START */
@@ -582,14 +581,39 @@ input[type=submit]:hover {
 @media screen and (max-width: 600px) {
 	.col-25,
 	.col-40,
-	.col-75,
-	input[type=submit] {
+	.col-75 {
 		width: 100%;
 		margin-top: 0;
 	}
 	.col-35 {
 		width: 100%;
 	}
+	input[type=submit] {
+		width: 32%;
+		margin-bottom: 2px;
+	}
+	.center-button {
+		width: 100% !important;
+		left: 0 !important;
+	}
+}
+
+.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+
+.payment-method {
+	margin-top: 10px;
+}
+
+.center-button {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	float: left !important;
 }
 
 /* Form styles - END */

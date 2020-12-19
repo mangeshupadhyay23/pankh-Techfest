@@ -98,6 +98,10 @@
         color: black;
         margin-top: -10px;
     }
+    .list-social-links{
+        float: none;
+        margin-left: -35%;
+    }
 }
 
 /* FOR 0 to 480px */
@@ -110,4 +114,9 @@
     }
 
     section{ padding: 20px 0;}
+
+    .list-social-links{
+        float: none;
+        margin-left: -35%;
+    }
 }

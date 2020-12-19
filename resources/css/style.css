@@ -495,10 +495,28 @@ footer div p {
 
 input[type=text],
 input[type=email],
+input[type=tel],
+input[type=number],
 select,
 textarea {
 	width: 100%;
 	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+input[type=date]{
+    width: 100%;
+	padding: 9px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+input[type=checkbox]{
+    margin-top: 30px;
+	padding: 9px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	resize: vertical;

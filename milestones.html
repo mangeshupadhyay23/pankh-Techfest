@@ -12,9 +12,9 @@
         <link rel="stylesheet" type="text/css" href="./resources/css/queries.css">
     </head>
     <body>
-        <header class="skill-training">
-            <nav>
-                <div class="row">
+        <header class="milestones">
+            <nav id="navbar">
+                <div class="row" id="js--main--nav">
                     <img src="./resources/assets/logo.png" alt="pankh_logo" class="logo">
                     <ul class="main-nav">
                         <li><a href="./index.html" ><span>Home</span></a></li>
@@ -35,66 +35,64 @@
                                 <a href="#" class="active" style="padding-left: 8px;">Milestones</a>
                             </div>
                         </li>
-                        <li><a href="./milestones.html"><span>Shop</span></a></li>
+                        <li><a href="./contact-us.html"><span>contact us</span></a></li>
                         <li><a href="./donate.html" class="btn btn-full">Donate</a></li>
                     </ul>
+                    <a class="mobile-nav-icon" onclick="showNavbar()"><ion-icon name="reorder-three-outline" id="js--nav--icon"></ion-icon></a>
                 </div>
             </nav>
             <div class="hero-text-box">
-                <h1>Teaching skills to unskilled</h1>
-                <p>Join with us to make a change</p>
-                <a href="#" class="btn btn-full">Volunteer with us</a>
+                <h1>Our accomplishments</h1>
+                <p>what we have achieved</p>
+                <a href="#welcome" class="btn btn-full">Know More</a>
             </div>
         </header>
 
-        <section class="section-milestone">
+        <section class="section-milestone" id="welcome">
             <h2>Milestones</h2>
             <div class="timeline">
                 <div class="container-timeline left">
                     <div class="content">
-                        <h3>20XX</h3>
-                        <img src="./resources/assets/donate-home.jpg" width="100%" style="border-radius: 10px; margin-bottom: 10px;">
+                        <h3>2005</h3>
+                        <img src="./resources/assets/2005.jpg" width="100%" style="border-radius: 10px; margin-bottom: 10px;">
                         <p>
-                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, 
-                            ad nec admodum perfecto mnesarchum, vim ea mazim fierent 
-                            detracto. Ea quis iuvaret expetendis his, te elit voluptua 
-                            dignissim per, habeo iusto primis ea eam.
+                            The foundation of PANKH was laid by 2 friends passionate to work for a cause 
+                            Dr. Vishambh Das and Dr. Mrigul Raj. The story of PANKH began from the basement 
+                            of an old delhi house, as an healthcare orientated organisation.
                         </p>
                     </div>
                 </div>
                 <div class="container-timeline right">
                     <div class="content">
-                        <h3>20XX</h3>
-                        <img src="./resources/assets/donate-home.jpg" width="100%" style="border-radius: 10px; margin-bottom: 10px;">
+                        <h3>2010</h3>
+                        <img src="./resources/assets/2010.jpg" width="100%" style="border-radius: 10px; margin-bottom: 10px;">
                         <p>
-                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, 
-                            ad nec admodum perfecto mnesarchum, vim ea mazim fierent 
-                            detracto. Ea quis iuvaret expetendis his, te elit voluptua 
-                            dignissim per, habeo iusto primis ea eam.
+                            5 years of growth and working for the underprivileged, PANKH family grew up to 
+                            900 volunteers across 37 cities, with 583 free checkups provided and 1000+ ration 
+                            kits distributed.
                         </p>
                     </div>
                 </div>
                 <div class="container-timeline left">
                     <div class="content">
-                        <h3>20XX</h3>
-                        <img src="./resources/assets/donate-home.jpg" width="100%" style="border-radius: 10px; margin-bottom: 10px;">
+                        <h3>2015</h3>
+                        <img src="./resources/assets/2015.jpg" width="100%" style="border-radius: 10px; margin-bottom: 10px;">
                         <p>
-                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, 
-                            ad nec admodum perfecto mnesarchum, vim ea mazim fierent 
-                            detracto. Ea quis iuvaret expetendis his, te elit voluptua 
-                            dignissim per, habeo iusto primis ea eam.
+                            Expanding our drives to more noble causes like skill training and quality education, 
+                            PANKH had 1063 craftspeople registered and 260+ families were given a sustainable 
+                            livelihood, and 4800+ underprivileged students being taught in 62 centres across 
+                            the country
                         </p>
                     </div>
                 </div>
                 <div class="container-timeline right">
                     <div class="content">
-                        <h3>20XX</h3>
-                        <img src="./resources/assets/donate-home.jpg" width="100%" style="border-radius: 10px; margin-bottom: 10px;">
+                        <h3>2020</h3>
+                        <img src="./resources/assets/2020.jpg" width="100%" style="border-radius: 10px; margin-bottom: 10px;">
                         <p>
-                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, 
-                            ad nec admodum perfecto mnesarchum, vim ea mazim fierent 
-                            detracto. Ea quis iuvaret expetendis his, te elit voluptua 
-                            dignissim per, habeo iusto primis ea eam.
+                            26,000+ and 100+ cities later, PANKH is proud to say that we have provided 10,000 
+                            free healthcare checkups, 10M + ration kits distributed, 700+ families given a 
+                            sustainable livelihood and 19,000 + students registered under our education drive.
                         </p>
                     </div>
                 </div>
@@ -107,11 +105,10 @@
             <div class="row">
                 <div class="col span-1-of-2">
                     <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Donate</a></li>
-                        <li><a href="#">Volunteer</a></li>
-                        <li><a href="#">Shop</a></li>
+                        <li><a href="./about-us.html">About us</a></li>
+                        <li><a href="./contact-us.html">Contact us</a></li>
+                        <li><a href="./donate.html">Donate</a></li>
+                        <li><a href="./volunteer.html">Volunteer</a></li>
                     </ul>
                 </div>
                 <div class="col span-1-of-2">
@@ -131,5 +128,27 @@
         </footer>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="./resources/js/script.js"></script>
+    <script>
+        window.onscroll = function(){
+            var prevScrollpos = document.getElementById("welcome").offsetTop;
+            var currentScrollPos = window.pageYOffset;
+
+            if(currentScrollPos+50>=prevScrollpos && document.getElementById('navbar').classList.length===0){
+                document.getElementById('navbar').classList.add("sticky");
+            }else if(currentScrollPos+50<prevScrollpos && document.getElementById('navbar').classList.length===1){
+                document.getElementById('navbar').classList.remove("sticky");
+            }
+        }
+        
+
+        showNavbar=function(){
+            if(document.getElementById('js--main--nav').style.display==="none"){
+                document.getElementById('js--main--nav').style.display="block";
+                document.getElementById('js--nav--icon').name="close-outline";
+            }else{
+                document.getElementById('js--main--nav').style.display="none";
+                document.getElementById('js--nav--icon').name="reorder-three-outline";
+            }
+        }
+    </script>
 </html>

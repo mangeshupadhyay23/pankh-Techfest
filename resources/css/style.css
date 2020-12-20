@@ -20,7 +20,8 @@ body {
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
-	overflow-x: hidden;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -125,7 +126,8 @@ h3 {
 	background-color: transparent;
 	color: #f04772;
 	border: none;
-	padding-left: 0;
+    padding-left: 0;
+    border-bottom: 2px solid transparent;
 }
 .btn-ghost ion-icon {
 	vertical-align: middle;
@@ -161,6 +163,46 @@ header {
 }
 .skill-training {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/skill-training-bg.jpg');
+	height: 95vh;
+}
+
+.about{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/about.jpg');
+	height: 95vh;
+}
+
+.healthcare{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/healthcarebg.jpg');
+	height: 95vh;
+}
+
+.education{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/educationbg.jpg');
+	height: 95vh;
+}
+
+.volunteer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/volunteerbg.jpg');
+	height: 95vh;
+}
+
+.locations{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/locationsbg.jpg');
+	height: 95vh;
+}
+
+.milestones{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/milestones.jpg');
+	height: 95vh;
+}
+
+.contact-us{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/2020.jpg');
+	height: 95vh;
+}
+
+.donate{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/donate-home.jpg');
 	height: 95vh;
 }
 

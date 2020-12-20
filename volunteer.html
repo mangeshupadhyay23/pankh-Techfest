@@ -12,11 +12,11 @@
         <link rel="stylesheet" type="text/css" href="./resources/css/queries.css">
     </head>
     <body>
-        <header class="skill-training">
-            <nav>
+        <header class="volunteer">
+            <nav id="navbar">
                 <div class="row">
                     <img src="./resources/assets/logo.png" alt="pankh_logo" class="logo">
-                    <ul class="main-nav">
+                    <ul class="main-nav" id="js--main--nav">
                         <li><a href="./index.html" ><span>Home</span></a></li>
                         <li class="dropdown">
                             <a href="#"><span>Causes</span> <ion-icon name="chevron-down-outline"></ion-icon></a>
@@ -35,21 +35,23 @@
                                 <a href="./milestones.html">Milestones</a>
                             </div>
                         </li>
-                        <li><a href="./shop.html"><span>Shop</span></a></li>
+                        <li><a href="./contact-us.html"><span>Contact Us</span></a></li>
                         <li><a href="./donate.html" class="btn btn-full">Donate</a></li>
                     </ul>
+                    <a class="mobile-nav-icon" onclick="showNavbar()"><ion-icon name="reorder-three-outline" id="js--nav--icon"></ion-icon></a>
                 </div>
             </nav>
             <div class="hero-text-box">
-                <h1>Teaching skills to unskilled</h1>
-                <p>Join with us to make a change</p>
-                <a href="#" class="btn btn-full">Volunteer with us</a>
+                <h1>Let's join hands</h1>
+                <p>Join our community of passionate social worker and lead a movement towards a better future for all</p>
+                <a href="#welcome" class="btn btn-full">Volunteer with us</a>
             </div>
         </header>
 
 
-        <h2 style="margin: 40px;">Volunteer with us</h2>
-        <section class="section-volunteer">
+        
+        <section class="section-volunteer" id="welcome">
+            <h2 >Volunteer with us</h2>
             <div class="row">
                 <form method="POST" action="#" class="contact-form">
                     <div class="row">
@@ -117,11 +119,10 @@
             <div class="row">
                 <div class="col span-1-of-2">
                     <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Donate</a></li>
-                        <li><a href="#">Volunteer</a></li>
-                        <li><a href="#">Shop</a></li>
+                        <li><a href="./about-us.html">About us</a></li>
+                        <li><a href="./contact-us.html">Contact us</a></li>
+                        <li><a href="./donate.html">Donate</a></li>
+                        <li><a href="./volunteer.html">Volunteer</a></li>
                     </ul>
                 </div>
                 <div class="col span-1-of-2">
@@ -141,5 +142,27 @@
         </footer>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="./resources/js/script.js"></script>
+    <script>
+        window.onscroll = function(){
+            var prevScrollpos = document.getElementById("welcome").offsetTop;
+            var currentScrollPos = window.pageYOffset;
+
+            if(currentScrollPos+50>=prevScrollpos && document.getElementById('navbar').classList.length===0){
+                document.getElementById('navbar').classList.add("sticky");
+            }else if(currentScrollPos+50<prevScrollpos && document.getElementById('navbar').classList.length===1){
+                document.getElementById('navbar').classList.remove("sticky");
+            }
+        }
+        
+
+        showNavbar=function(){
+            if(document.getElementById('js--main--nav').style.display==="none"){
+                document.getElementById('js--main--nav').style.display="block";
+                document.getElementById('js--nav--icon').name="close-outline";
+            }else{
+                document.getElementById('js--main--nav').style.display="none";
+                document.getElementById('js--nav--icon').name="reorder-three-outline";
+            }
+        }
+    </script>
 </html>

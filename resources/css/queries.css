@@ -119,6 +119,12 @@
         float: none;
         margin-left: -35%;
     }
+
+    .gallery li {
+        float: none;
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 /* TIMELINE */

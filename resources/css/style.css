@@ -700,7 +700,7 @@ input[type=submit]:hover {
 }
 
 .right::after{
-    left: -16px;
+    left: -16px; 
 }
 
 .content {

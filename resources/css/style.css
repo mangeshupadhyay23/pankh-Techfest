@@ -505,13 +505,7 @@ textarea {
 	resize: vertical;
 }
 
-input[type=number]{
-    width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	resize: vertical;
-}
+
 
 input[type=date]{
     width: 100%;
@@ -625,3 +619,98 @@ input[type=submit]:hover {
 }
 
 /* Form styles - END */
+
+
+/* ////////////////////////////////////////////////////
+//////////// MILESTONES ////////////////////////////
+//////////////////////////////////////////////////// */
+
+
+/* TIMELINE */
+
+/* .section-milestone{
+    
+} */
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #f04772;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+ 
+.container-timeline {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.container-timeline::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #f1f1f1;
+    border: 4px solid #d1214d;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+.left{left: 0;}
+.right{left:50%;}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #f1f1f1;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #f1f1f1;
+}
+
+.right::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #f1f1f1;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #f1f1f1 transparent transparent;
+}
+
+.right::after{
+    left: -16px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: #f1f1f1;
+    position: relative;
+    border-radius: 6px;
+    color: black;
+  }
+
+
+
+

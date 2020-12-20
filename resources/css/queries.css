@@ -120,3 +120,32 @@
         margin-left: -35%;
     }
 }
+
+/* TIMELINE */
+@media screen and (max-width: 600px) {
+    
+    .timeline::after {
+    left: 31px;
+    }
+    
+    .container-timeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    .container-timeline::before {
+    left: 60px;
+    border: medium solid #f1f1f1;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #f1f1f1 transparent transparent;
+    }
+  
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    .right {
+    left: 0%;
+    }
+  }
